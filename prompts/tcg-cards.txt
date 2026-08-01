@@ -1,0 +1,50 @@
+[action] 
+
+create a script to create a table in postgresql  
+
+[context] 
+
+- the first table is a table to save a pokemon tcg card
+- the second table is a table to save collections set 
+
+connect the tables with foreing key 
+
+[information]
+
+the first table: tbl_cards
+
+- id
+- hp
+- name
+- type
+- stage 
+- info
+- attack
+- damage
+- weak
+- resis. 
+- retreat 
+- cardNumberInCollection
+
+the second table: tbl_collections
+
+- id
+- collectionSetName
+- release date
+- totalCardsInCollection
+
+[more prompts that were used during de execution of the program]
+
+- create a script to create a table in postgresql
+- optimize de varchar fields to a perfect size
+- remove comments, please, and dont use comments in the scripts. please.
+- create another tables and link to tbl_cards
+- create a table to separate type
+- create a table to separate stage
+- consider the tables that we made. then, create a initial seed to all tables with tcg pokemon cards and generate inserts scripts.
+- generate 20 inserts records into tbl cards
+- more 30 records, please.
+- more 30 records, please.
+- i want to create a sql view of all the querys that we made today.
+- as informed the view: SELECT * FROM vw_stage2_fire_cards_pre2000; do a select, but dont do a select *, 
+    do it selecting field by field.
